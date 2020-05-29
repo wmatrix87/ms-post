@@ -1,0 +1,36 @@
+{
+  "name": "microservices",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "skaffold dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*",
+    "workspace/client/*",
+    "workspace/comments/*",
+    "workspace/event-bus/*",
+    "workspace/moderation/*",
+    "workspace/posts/*",
+    "workspace/query/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.0",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "dotenv": "^8.2.0"
+  }
+}
